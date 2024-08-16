@@ -1,0 +1,396 @@
+@media (max-width: 959px) {
+    html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        user-select: none;
+    }
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+    /* phone menu */
+    /* Style the hamburger icon */
+.hamburger-menu {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    color: white;
+    font-size: 2cm;
+  }
+  
+  /* Overlay that covers the whole screen */
+  .overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: block;
+    z-index: 2;
+    transition: left 0.3s ease-in-out;
+  }
+  
+  /* Show the overlay when open */
+  .overlay.open {
+    left: 0;
+  }
+  
+  /* Positioning and styling the content inside the overlay */
+  .overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .overlay-content a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 2cm;
+    color: white;
+    display: block;
+    transition: color 0.3s;
+}
+  .overlay-content a:hover {
+    color: #f1c40f;
+  }
+  
+  /* Style for the close button */
+  .closebtn {
+    font-size: 40px;
+    color: white;
+    position: fixed;
+    top: -14cm;
+    right: -4.5cm;
+    cursor: pointer;
+    font-size: 2cm;
+}
+  
+    /* phone menu */
+    * {
+      font-family: "Playfair Display", serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+    }
+    .App {
+        text-align: center;
+    }
+    
+    section {
+        padding: 50px 20px;
+    }
+    
+    h2 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: bolder;
+    }
+    /* header */
+    #myimg {
+      border-radius: 2cm;
+      scale: 0.65;
+    }
+    .header {
+        display: flex;
+        align-items: center;
+        height: 3cm;
+        padding: 20px;
+        width: 30cm;
+        background-color: #333;
+        color: white;
+    }
+    
+    .header h1 {
+      font-style: italic;
+      font-size: 43px;
+    }
+    #laptopmenu{
+      display: none;
+    }
+    
+    /* about */
+    .about {
+        background-color: #fff;
+        color: #333;
+        text-align: left;
+        height: 27cm;
+        padding: 0;
+    }
+    #about button {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+    .about p {
+        max-width: 100%;
+        margin: 0 2cm;
+        font-size: 2.2rem;
+        line-height: 1.6;
+        text-align: justify;
+    }
+    
+    /* project */
+    .projects {
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    .card-list:has(li:hover) li:not(:hover) {
+        filter: blur(4px)
+    }
+    .card-list {
+        display: grid;
+        gap: 1rem;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    
+    li {
+        margin: 0;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    li::before {
+        content: "";
+    }
+    
+    a {
+        background: none;
+    }
+    
+    .paper {
+        padding: 1.5rem;
+    }
+    
+    li a {
+        padding-inline-start: 1rem;
+    }
+    
+    .project-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .project-item {
+        font-size: 30px;
+        background: #fff;
+        margin: 15px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        width: 13cm;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: scale 0.3s ease, background-color 0.3s ease-in;
+    }
+    .project-item h3 {
+      font-weight: 900;
+      text-decoration: underline;
+    }
+    
+    .project-item:active:after {
+        scale: 1.2;
+        background-color: aliceblue;
+    }
+    
+    .project-item a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 0;
+        color: #007BFF;
+        text-decoration: none;
+    }
+    
+    .raise {
+        position: relative;
+        text-decoration: none;
+        color: #007BFF;
+    }
+    .raise::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 100%;
+        background: #007BFF;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+        transform-origin: bottom right;
+    }
+    .raise:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    .typewriter h1 {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid orange; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing 3.5s steps(40, end),
+          blink-caret .75s step-end infinite;
+    }
+    
+    /* The typing effect */
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+    
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange; }
+    }
+    
+    /* skills */
+    .skills {
+        background-color: #fff;
+        color: #333;
+    }
+    
+    .skill-list {
+        display: grid;
+        font-size: 31px;
+        flex-direction: column;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        justify-items: center;
+        margin-left: 2cm;
+        margin-right: 2cm;
+        grid-column-gap: 1cm;
+    }
+    
+    .skill-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .skill-bar {
+        background-color: #ddd;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    
+    .skill-level {
+        height: 20px;
+        background-color: #007BFF;
+        border-radius: 20px 0 0 20px;
+    }
+    
+    /* contact */
+    .contact {
+        background-color: #333;
+        color: white;
+        padding: 50px 20px;
+        text-align: center;
+    }
+    
+    .contact form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .contact input, .contact textarea {
+        width: 120%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        font-size: xx-large;
+    }
+    
+    .contact button {
+        font-size: 0.95cm;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    
+    .contact button:hover {
+        background-color: #0056b3;
+    }
+    
+    .social-links {
+        margin-top: 20px;
+        font-size: 1cm;
+    }
+    
+    .social-links a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .social-links a:hover {
+        text-decoration: underline;
+    } 
+    .social {
+        position: fixed;
+        top: 7cm;
+      }
+      .social ul {
+        font-size: 1cm;
+        padding: 0px;
+        transform: translate(-7cm, 0);
+    }
+      .social ul li {
+        display: block;
+        margin: 5px;
+        background: rgba(0, 0, 0, 0.36);
+        width: 300px;
+        text-align: right;
+        padding: 10px;
+        border-radius: 0 30px 30px 0;
+        transition: all 1s;
+      }
+      .social ul li:hover {
+        transform: translate(4.5cm, 0);
+        /* background: rgba(255, 255, 255, 0.534); */
+    }
+    .social ul li:hover a {
+        color: #fff;
+        text-decoration: none;
+    }
+      .social ul li:hover i {
+        color: #fff;
+        background: rgba(0, 0, 0, 0.36);
+        transform: rotate(360deg);
+        transition: all 1s;
+      }
+      .social ul li i {
+        margin-left: 10px;
+        color: #000;
+        background: #fff;
+        padding: 10px;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        background: #ffffff;
+        transform: rotate(0deg);
+      }
+    #social-list {
+        list-style-type: none;
+        display: flex;
+        font-size: 1cm;
+    }
+}
