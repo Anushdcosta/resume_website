@@ -1,4 +1,5 @@
 import React from 'react';
+import Phonemenu from './PhoneMenu';
 
 function Header() {
     document.addEventListener('DOMContentLoaded', function () {
@@ -30,9 +31,7 @@ function Header() {
                     </ul>
                 </nav>
             </div>
-            <div id='phonemenu'>
-                
-            </div>
+            <Phonemenu />
         </header>
     );
 }
