@@ -2,7 +2,7 @@ import React from 'react'
 
 function Request() {
   return (
-    <div>Please use a bigger device like a laptop or tablet</div>
+    <div id='small'>Please use a bigger device like a laptop or tablet</div>
   )
 }
 

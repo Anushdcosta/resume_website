@@ -1,4 +1,7 @@
 @media (min-width: 545px) and (max-width: 959px)  {
+    .Toosmall {
+        display: none;
+    }
     html {
         scroll-behavior: smooth;
         overflow-x: hidden;
@@ -396,6 +399,9 @@
     }
 }
 @media screen and (max-width: 544px){
+    .Toosmall {
+        display: none
+    }
     html {
         scroll-behavior: smooth;
         overflow-x: hidden;
@@ -793,6 +799,9 @@
     }
   }
 @media (max-width: 417px) {
+    .Toosmall{
+    display: none;
+}
     .about p {
         max-width: 100%;
         margin: 0 2cm;

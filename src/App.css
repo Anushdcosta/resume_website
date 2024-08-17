@@ -1,5 +1,8 @@
 
 @media (min-width: 960px) {
+  .Toosmall {
+    display: none;
+  }
   html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -353,6 +356,9 @@
 @media (max-width: 1219px) {
   .header div {
     width: 60%;
+  }
+  .Toosmall {
+    display: none;
   }
 }
 @media (max-width: 1135px) {
