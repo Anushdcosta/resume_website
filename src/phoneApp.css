@@ -17,7 +17,7 @@
     .hamburger-menu {
         font-size: 30px;
         cursor: pointer;
-        position: absolute;
+        position: fixed;
         top: 0.15cm;
         right: -4cm;
         z-index: 1;
@@ -417,12 +417,14 @@
     .hamburger-menu {
         font-size: 30px;
         cursor: pointer;
-        position: absolute;
+        position: fixed;
         top: 0.15cm;
         right: -4cm;
         z-index: 1;
         color: white;
         font-size: 2cm;
+        filter: invert(0);
+        mix-blend-mode: difference;
     }
   /* Overlay that covers the whole screen */
   .overlay {
