@@ -3,6 +3,12 @@
   .Toosmall {
     display: none;
   }
+  #laptopmenu {
+    width: 24cm;
+}
+#image {
+  display: contents;
+}
   html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -32,7 +38,7 @@
   h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
-    /* text-align: center; */
+    text-align: justify;
     margin-left: 5cm;
 }
   /* header */
@@ -55,7 +61,8 @@
   .header h1 {
     font-style: italic;
     font-size: 43px;
-  }
+    width: 12cm;
+}
   .header div {
     width: 63%;
     display: flex;
@@ -353,19 +360,35 @@
       transform: rotate(0deg);
     }
   }
-@media (max-width: 1219px) {
-  .header div {
-    width: 60%;
-  }
-  .Toosmall {
-    display: none;
-  }
-}
 @media (max-width: 1135px) {
   .header div {
     width: 100%;
 }
 .header h1 {
   font-size: 35px;
+}
+}
+@media (max-width:997px) {
+.header h1 {
+  font-style: italic;
+  font-size: 30px;
+  width: 9cm;
+}
+}
+@media (min-width: 694px) and (max-width: 954px) {
+  .hamburger-menu {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 0.15cm;
+    right: -8cm;
+    z-index: 1;
+    color: white;
+    font-size: 2cm;
+}
+.header h1 {
+  font-style: italic;
+  font-size: 43px;
+  width: 32cm;
 }
 }
