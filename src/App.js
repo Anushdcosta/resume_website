@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Social from './components/Socials';
+import Request from './components/Request';
 
 function App() {
     // function Disableall() { useEffect(() => {
@@ -35,6 +36,7 @@ function App() {
     //   }, []);}
     // Disableall()
     return (
+        <>
         <div className="App">
             <Social />
             <Header />
@@ -43,6 +45,10 @@ function App() {
             <Skills />
             <Contact />
         </div>
+        <div className='Toosmall'>
+            <Request />
+        </div>
+        </>
     );
 }
 

@@ -394,7 +394,7 @@
         font-size: 1cm;
     }
 }
-@media (max-width: 544px){
+@media screen and (max-width: 544px){
     html {
         scroll-behavior: smooth;
         overflow-x: hidden;
@@ -790,3 +790,18 @@
         font-size: 1cm;
     }
   }
+@media (max-width: 417px) {
+    .about p {
+        max-width: 100%;
+        margin: 0 2cm;
+        font-size: 0.9rem;
+        line-height: 1.6;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 296px) {
+    .App {
+        display: none;
+    }
+}
