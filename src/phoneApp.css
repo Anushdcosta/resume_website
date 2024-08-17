@@ -51,7 +51,7 @@
   .overlay-content a {
     padding: 10px;
     text-decoration: none;
-    font-size: 2cm;
+    font-size: 1cm;
     color: white;
     display: block;
     transition: color 0.3s;
@@ -107,9 +107,10 @@
     }
     
     .header h1 {
-      font-style: italic;
-      font-size: 43px;
-    }
+        font-style: italic;
+        font-size: 43px;
+        width: 18cm;
+    }   
     #laptopmenu{
       display: none;
     }
@@ -447,11 +448,11 @@
   .overlay-content a {
     padding: 10px;
     text-decoration: none;
-    font-size: 2cm;
+    font-size: 1cm;
     color: white;
     display: block;
     transition: color 0.3s;
-  }
+}
   .overlay-content a:hover {
     color: #f1c40f;
   }
@@ -503,8 +504,9 @@
     }
     
     .header h1 {
-      font-style: italic;
-      font-size: 43px;
+        font-style: italic;
+        font-size: 27px;
+        width: 13cm;
     }
     #laptopmenu{
       display: none;
@@ -797,6 +799,44 @@
         font-size: 0.9rem;
         line-height: 1.6;
         text-align: justify;
+    }
+    .skill-list {
+        display: grid;
+        font-size: 12px;
+        flex-direction: column;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        justify-items: center;
+        margin-left: 1cm;
+        margin-right: 1cm;
+        grid-column-gap: 1cm;
+    }
+    .closebtn {
+        font-size: 40px;
+        color: white;
+        position: fixed;
+        top: -6.5cm;
+        right: 0.5cm;
+        cursor: pointer;
+        font-size: 3cm;
+    }
+    .overlay-content a {
+        padding: 10px;
+        text-decoration: none;
+        font-size: 1cm;
+        color: white;
+        display: block;
+        transition: color 0.3s;
+    }
+    #image {
+        width: 3.5cm;
+    }
+    .header h1 {
+        font-style: italic;
+        font-size: 21px;
+        width: 13cm;
     }
 }
 

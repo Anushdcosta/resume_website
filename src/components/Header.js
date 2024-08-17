@@ -19,7 +19,9 @@ function Header() {
 
     return (
         <header className="header">
-            <img src="me.jpg" alt='Anush Dcosta' id='myimg'/>
+            <div id='image'>
+                <img src="me.jpg" alt='Anush Dcosta' id='myimg'/>
+            </div>
             <h1>Anush Dcosta</h1>
             <div id='laptopmenu'>
                 <nav>
